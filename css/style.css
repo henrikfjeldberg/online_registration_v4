@@ -1,0 +1,89 @@
+:root {
+    background: #f9f9f9;
+    color: #010101;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    line-height: 1.55rem
+}
+
+body {
+    max-width: 100%;
+    margin: auto;
+}
+
+header {
+    background: #212121;
+    padding: 2rem;
+}
+
+header .title {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-bottom: thick solid;
+}
+
+form {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Form field */
+
+fieldset {
+    border: none;
+}
+
+fieldset#contact {
+    border-bottom: 2px solid;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea, 
+select {
+    background: #eee;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+button {
+    background: teal;
+    color: white;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Type styles */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
