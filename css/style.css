@@ -6,6 +6,10 @@
     line-height: 1.55rem
 }
 
+:focus {
+    outline: 0;
+}
+
 body {
     max-width: 100%;
     margin: auto;
@@ -43,6 +47,8 @@ form {
 
 fieldset {
     border: none;
+    padding: 0;
+    padding-bottom: 3rem;
 }
 
 fieldset#contact {
@@ -51,24 +57,78 @@ fieldset#contact {
 
 label {
     display: block;
+    margin-top: 1.75rem;
+    margin-bottom: .75rem;
 }
 
-input,
-textarea, 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
 select {
     background: #eee;
     width: 90%;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 5px;
+    border: 0;
+}
+
+input[id="zip"] {
+    width: 45%
+}
+
+textarea {
+    height: 5rem;
+}
+select {
+    height: 3.3rem;
+    padding-right: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid
 }
 
 button {
     background: teal;
     color: white;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
+    border: 0;
     border-radius: 5px;
+    
 }
+
+::-webkit-input-placeholder {
+    text-align: right;
+    font-size: .8rem
+}
+
+
+/* newsletter forms */
+
+input[type="radio"]+label, 
+input[type="checkbox"]+label {
+    display: inline-block;
+    margin-left: .75rem;
+    margin-top: 0rem;
+}
+
+/* Foooter */
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+
 
 /* Type styles */
 
@@ -84,6 +144,6 @@ h1 {
 legend {
     font-size: 1.5rem;
     font-weight: 700;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
 }
