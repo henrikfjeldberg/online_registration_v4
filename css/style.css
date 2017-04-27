@@ -1,3 +1,9 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 :root {
     background: #f9f9f9;
     color: #010101;
@@ -12,10 +18,11 @@
 
 body {
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 header {
+    position: relative;
     background: #212121;
     padding: 2rem;
 }
@@ -29,8 +36,7 @@ header .title {
 }
 
 .section {
-    max-width: 90%;
-    margin: 0 auto;
+    margin: 0 3%;
     margin-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -38,14 +44,14 @@ header .title {
 }
 
 form {
-    max-width: 90%;
-    margin: 0 auto;
+    
 }
 
 
 /* Form field */
 
 fieldset {
+    margin: 0 3%;
     border: none;
     padding: 0;
     padding-bottom: 3rem;
@@ -53,6 +59,30 @@ fieldset {
 
 fieldset#contact {
     border-bottom: 2px solid;
+}
+
+@media (min-width: 1200px) {
+    fieldset#contact label, 
+    fieldset#contact input {
+        display: inline-block;  
+    }
+    
+    
+    fieldset#contact label {
+        width: 20%;
+        text-align: left;
+    }
+    fieldset#contact input,
+    fieldset#contact select {
+        width: 79%;
+        text-align: right;
+    }
+    
+    fieldset#contact input[id="zip"] {
+    width: 30%
+}
+
+    
 }
 
 label {
@@ -68,7 +98,7 @@ input[type="tel"],
 textarea,
 select {
     background: #eee;
-    width: 90%;
+    width: 100%;
     padding: 1.2rem;
     border-radius: 5px;
     border: 0;
@@ -98,9 +128,10 @@ select:focus {
 }
 
 button {
+    margin: 0 3%;
     background: teal;
     color: white;
-    width: 100%;
+    width: 94%;
     padding: 1rem;
     border: 0;
     border-radius: 5px;
@@ -146,4 +177,8 @@ legend {
     font-weight: 700;
     padding-top: 3rem;
     margin-bottom: 1rem;
+}
+
+select .placeholder {
+    color: red;
 }
