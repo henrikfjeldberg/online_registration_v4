@@ -61,7 +61,7 @@ fieldset#contact {
     border-bottom: 2px solid;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     fieldset#contact label, 
     fieldset#contact input {
         display: inline-block;  
